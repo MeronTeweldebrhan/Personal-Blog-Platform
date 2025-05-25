@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body >
+    <main class="container ">
+   <div class="form-section">
+    <h1 class="main-title"> 📚 My Blog Platform</h1>
+    <form id="postForm" class="post-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title"/>
+        <span id="titleError" class="error-message hidden">Title is required.</span>
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea id="content" ></textarea>
+        <span id="contentError" class="error-message hidden">Content is required.</span>
+      </div>
+      <button type="submit" class="savebtn">Save Post</button>
+    </form>
+    <div id="postsContainer" class="posts-container"></div>
+  </div>
+  </main>
+</body>
+</html>
